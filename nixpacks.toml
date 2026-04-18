@@ -1,0 +1,19 @@
+[phases.setup]
+nixPkgs = [
+  "python311",
+  "poppler_utils",
+  "tesseract",
+  "pango",
+  "cairo",
+  "gdk-pixbuf",
+  "libffi",
+  "fontconfig",
+  "freetype",
+  "harfbuzz",
+]
+
+[phases.install]
+cmds = ["pip install -r requirements.txt --break-system-packages"]
+
+[start]
+cmd = "gunicorn app:app --timeout 120 --workers 2"
