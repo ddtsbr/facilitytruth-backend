@@ -6,7 +6,7 @@ stripe==7.12.0
 psycopg2-binary==2.9.9
 pdfplumber==0.11.0
 pytesseract==0.3.10
-Pillow==10.3.0
+Pillow==10.4.0
 pdf2image==1.17.0
 weasyprint==62.3
 requests==2.31.0
